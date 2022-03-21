@@ -34,7 +34,9 @@ function Checkout() {
       sessionId: checkoutSession.data.id,
     })
 
-    if (result.error) alert(result.error.message)
+    if (result.error) {
+      console.log('error: ', result.error.message)
+    }
   }
   return (
     <div className='bg-gray-100'>

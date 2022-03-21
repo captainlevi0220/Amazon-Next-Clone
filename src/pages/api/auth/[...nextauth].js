@@ -11,4 +11,6 @@ export default NextAuth({
     }),
     // ...add more providers here
   ],
+  secret: process.env.STRIPE_SECRET_KEY,
+  // secret_key: process.env.STRIPE_SECRET_KEY,
 })
